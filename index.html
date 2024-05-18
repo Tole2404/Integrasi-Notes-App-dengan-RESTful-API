@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App</title>
+  </head>
+  <body>
+    <header>
+      <bar-custom></bar-custom>
+    </header>
+    <main>
+      <div id="loadingSpinner" class="loading-spinner">
+        <div class="spinner"></div>
+      </div>
+
+      <div class="wrapper">
+        <div class="container">
+          <section class="input-section">
+            <input-note></input-note>
+          </section>
+        </div>
+      </div>
+
+      <div class="filter-notes">
+          <section class="filter">
+            <h2 class="text-center">Filter Notes</h2>
+            <select id="filterNotes">
+              
+              <option class="filter-option" value="non-archived">Non Archived</option>
+              <option class="filter-option" value="archived">Archived</option>
+            </select>
+          </section>
+        </div>
+
+          <div id="noteListContainer" class="grid-container">
+            <div id="notelist" class="note-list">
+              <div tabindex="0" class="listnote" id="noteItem"></div>
+            </div>
+          </div>
+      </div>
+    </main>
+      <footer>
+        <footer-custom></footer-custom>
+      </footer>
+    </main>
+  </body>
+</html>
